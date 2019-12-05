@@ -4,6 +4,7 @@ Hello 大家好！相信大家在工作中经常会遇到多个 Excel 表格的�
 
 mergeAllSheet 合并同一个WorkBook中所有的Sheet
 
+<<<<<<< HEAD
 第一种情况如果是一个 Excel 表里的多个 Sheet ，这种情况该怎么处理呢
 
 首先我们需要 导入 pandas 和 os 库，pandas 是为了处理 Excel 表格，os 库是为了处理文件索引，看一下当前
@@ -18,3 +19,8 @@ mergeAllSheet 合并同一个WorkBook中所有的Sheet
 mergeAllWb    合并文件夹里所有的WorkBook的第一张Sheet
 
 mergeAll      合并文件夹里所有的WorkBook的所有Sheet
+=======
+mergeAllWb    合并文件夹里所有的WorkBook的第一张Sheet
+
+mergeAll      合并文件夹里所有的WorkBook的所有Sheet
+>>>>>>> 7782a243db42d424934a8449d5dc4a1ef9132110
