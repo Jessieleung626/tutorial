@@ -80,7 +80,7 @@ WHERE sex = 2
 GROUP BY pre_name;
 
 -- 男女分组的 Case When 写法，将数据结果转化为 二维表
-select
+select 
 pre_name,
 sum(case when sex=1 then population else 0 end) as '男',
 sum(case when sex=2 then population else 0 end) as '女'

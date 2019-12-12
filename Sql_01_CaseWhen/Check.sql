@@ -8,8 +8,8 @@ CREATE TABLE `poptbl2` (
   PRIMARY KEY (`pid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
-alter table poptbl2 add CONSTRAINT population CHECK
-(sex = 2 and population > 50); -- 与 逻辑上的与 不同，如果第一个条件为假，则不再验证范围内，如果第一个条件为真，第二个为假，则判定为不合要求，而如果存在不能判定的，另一个为假则为假，为真则为真
+alter table poptbl2 add CONSTRAINT population CHECK 
+(sex = 2 and population > 50); -- 与 逻辑上的且 不同，如果第一个条件为假，则不再验证范围内，如果第一个条件为真，第二个为假，则判定为不合要求，而如果存在不能判定的，另一个为假则为假，为真则为真
 
 INSERT INTO `poptbl2` (`pid`, `pre_name`, `sex`, `population`) VALUES
 (1, '德岛', 2, 30),
